@@ -1,0 +1,7 @@
+<rests xmlns="http://camel.apache.org/schema/spring">
+    <rest path="/apple">
+        <get uri="/hello">
+            <to uri="direct:test-route"/>
+        </get>
+    </rest>
+</rests>

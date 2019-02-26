@@ -1,0 +1,9 @@
+<routes xmlns="http://camel.apache.org/schema/spring">
+    <route>
+        <from uri="direct:test-route"/>
+        <log message="Inside test route"/>
+        <setBody>
+            <constant>Hello World</constant>
+        </setBody>
+    </route>
+</routes>
